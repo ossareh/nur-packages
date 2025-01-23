@@ -2,6 +2,7 @@
   lib,
   fetchFromGitHub,
   rustPlatform,
+  tzdata,
   ...
 }: let
   pname = "tackler-ng";
@@ -20,8 +21,12 @@ in
     version = version;
     src = src;
 
-    #useFetchCargoVendor = true;
     cargoHash = "sha256-xxhnXI9zbWt1rWTUZbyj/4AXEQGSB2VStuGdwWw+eaU=";
+
+    nativeBuildInputs = [tzdata];
+    env = {
+      TZDIR = "${tzdata}/share/zoneinfo";
+    };
 
     meta = {
       description = "Fast, reliable bookkeeping engine with native GIT SCM support for plain text accounting";
