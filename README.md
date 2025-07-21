@@ -11,4 +11,4 @@
 Unlike the sanctioned NUR template I use snowfall's lib to power this flake.
 
 To see available packages: `flake show`
-To build a package: `flake build .#tackler` or `flake build --show`
+To build a package: `flake build .#tackler` or `flake build --pick`
