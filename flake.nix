@@ -1,5 +1,5 @@
 {
-  description = "Base Template";
+  description = "Ossareh's NUR Archive";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
@@ -21,10 +21,10 @@
       snowfall = {
         root = ./nix-config;
 
-        namespace = "base-template";
+        namespace = "nur";
         meta = {
-          name = "base-template";
-          title = "base-template";
+          name = "nur";
+          title = "Ossareh's NUR Archive";
         };
       };
 

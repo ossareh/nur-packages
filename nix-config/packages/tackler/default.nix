@@ -21,7 +21,7 @@ in
     version = version;
     src = src;
 
-    cargoHash = "sha256-CfBpR1lX4K6d8105hRquPFexp6Fj7+zmKwsm/8ia2KI=";
+    cargoHash = "sha256-Kzd+3JLGsoiMRsmGmG26Q7BVmjU7DepgDNJDOnl4hIU=";
 
     nativeBuildInputs = [tzdata];
     env = {
